@@ -9,23 +9,23 @@ const reactionSchema = new Schema({
         type: String,
         required: true,
         minLength: 1,
-        maxLength: 300,
+        maxLength: 280,
     },
     username: {
         type: String,
         required: true,
     },
-    created: {
+    createdAt: {
         type: Date,
         default: Date.now()
     }
 },
 {
     toJson: {
+        getters: true,
         virtuals: true
     },
-    _id: false
-}
+    id: false
 )
 
 module.exports = reactionSchema
