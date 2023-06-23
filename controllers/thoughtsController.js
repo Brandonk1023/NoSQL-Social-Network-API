@@ -1,7 +1,7 @@
 const thoughts = require('./../models/thoughts')
 const users = require('./../models/users')
 
-const thoughtsControl = {
+const thoughtsController = {
     getThoughts(req, res) {
         thoughts.find({})
         .then(dbThoughtsData => res.json(dbThoughtsData))
@@ -31,7 +31,7 @@ const thoughtsControl = {
         .then(({ _id }) => {
             return users.findOneAndUpdate(
                 { _id: body.userId},
-                { $push: { thoughts: _id}}
+                { $push: { thoughts: _id}},
                 { new: true }
             )
         })
