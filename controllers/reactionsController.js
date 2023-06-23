@@ -30,4 +30,4 @@ const reactionsController = {
 };
 
 
-modules.exports = reactionsController
+module.exports = reactionsController
