@@ -3,7 +3,7 @@ const users = require('./../models/users')
 
 const reactionsController = {
     addReaction({ params, body }, res) {
-        Thought.findOneAndUpdate(
+        thoughts.findOneAndUpdate(
             { _id: params.thoughtId },
             { $push: { reactions: body } },
             {new: true, runValidators: true }
@@ -19,7 +19,7 @@ const reactionsController = {
     },
 
     removeReaction({ params }, res) {
-        Thought.findOneAndUpdate(
+        thoughts.findOneAndUpdate(
             { _id: params.thoughtId },
             { $pull: { reactions: { reactionId: params.reactionId} } },
             { new: true }

@@ -64,7 +64,7 @@ const thoughtsController = {
 
   updateThought({ params, body }, res) {
     thoughts
-      .findOneandUpdate({ _id: params.id }, body, {
+      .findOneAndUpdate({ _id: params.id }, body, {
         new: true,
         runValidators: true,
       })
