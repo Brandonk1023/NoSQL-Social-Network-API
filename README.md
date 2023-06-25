@@ -27,14 +27,14 @@ To start the API application,  the user will need to run the following command `
 
 To use the application the User will navigate the API using the routes and sending JSON data.  The routes are listed below.
 
-GET:
+### GET:
 To get all users or thoughts use the following route:
 `http://localhost:3001/api/` and add `users` or `thoughts` to the end to access the data.
 
-To get a specifi user or thought use the following route:
+To get a specific user or thought use the following route:
 `http://localhost:3001/api/ {enter users or thoughts here} / { enter user or thought ID here}`
 
-POST:
+### POST:
 To create a user:
 `http://localhost:3001/api/users`
 
@@ -42,7 +42,30 @@ To create a thought:
 `http://localhost:3001/api/thoughts`
 
 To add a friend:
-`http://localhost:3001/api/users/ {enter user ID here} /friends/64977b1ae74f3965cc07785b
+`http://localhost:3001/api/users/ {enter user ID here} /friends/ {enter friend's user ID here}`
+
+To add a reaction:
+`http://localhost:3001/api/thoughts/ {enter thought ID here} /reactions`
+
+### PUT:
+To update a user:
+`http://localhost:3001/api/users/ {enter user ID here}`
+
+To update a thought:
+`http://localhost:3001/api/thoughts/ {enter thought ID here}`
+
+### DELETE:
+To delete a user:
+`http://localhost:3001/api/users/ {enter user ID here}`
+
+To delete a thought:
+`http://localhost:3001/api/thoughts/ {enter thought ID here}`
+
+To delete a friend:
+`http://localhost:3001/api/users/ {enter user ID here} /friends/ {enter friend's user ID here}`
+
+To delete a reaction:
+`http://localhost:3001/api/thoughts/ {enter thought ID here} /reactions/ {enter reaction ID here}`
 
 
 ![API Screenshot](assets\APIscreenshot.jpg)
