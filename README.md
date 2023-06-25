@@ -2,12 +2,8 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This application is a NoSQL social network API application.  The motivation behind this project was to practice and further develop my backend application skills.  This application also servers as a good demonstration and basis for the beginning of a social network/media application back end.  Working on this project allowed me to further my knowledge and hone my skills with using NoSQL technologies such as Mongoose, and MongoDB.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 ## Table of Contents
 
@@ -72,11 +68,13 @@ To delete a reaction:
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+MongoDB Documentation:
+https://www.mongodb.com/docs/
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Mongoose Documentation:
+https://mongoosejs.com/docs/
 
-If you followed tutorials, include links to those here as well.
+
 
 ## License
 
