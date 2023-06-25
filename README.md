@@ -16,15 +16,34 @@ Provide a short description explaining the what, why, and how of your project. U
 - [Credits](#credits)
 - [License](#license)
 
+## Walkthrough Video URL
+https://youtu.be/0d5XTp2fMp0
+
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To start the API application,  the user will need to run the following command `npm i` for installing any needed dependencies, and then `npm start` for starting the application.  Once this has been done the user can navigate the API and use it's routes.  To see a demonstration of the API in action, please view the walkthrough video at the URL listed above.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use the application the User will navigate the API using the routes and sending JSON data.  The routes are listed below.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+GET:
+To get all users or thoughts use the following route:
+`http://localhost:3001/api/` and add `users` or `thoughts` to the end to access the data.
+
+To get a specifi user or thought use the following route:
+`http://localhost:3001/api/ {enter users or thoughts here} / { enter user or thought ID here}`
+
+POST:
+To create a user:
+`http://localhost:3001/api/users`
+
+To create a thought:
+`http://localhost:3001/api/thoughts`
+
+To add a friend:
+`http://localhost:3001/api/users/ {enter user ID here} /friends/64977b1ae74f3965cc07785b
+
 
 ![API Screenshot](assets\APIscreenshot.jpg)
 
