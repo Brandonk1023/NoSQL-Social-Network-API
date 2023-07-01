@@ -64,7 +64,7 @@ To delete a reaction:
 `http://localhost:3001/api/thoughts/ {enter thought ID here} /reactions/ {enter reaction ID here}`
 
 
-![API Screenshot](assets\APIscreenshot.jpg)
+![API Screenshot](assets/APIscreenshot.jpg)
 
 ## Credits
 
